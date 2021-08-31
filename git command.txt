@@ -46,13 +46,13 @@ git push origin master 推送到 远程库上。
 
 
 -------------------------------------------
-Git 全局设置:
+添加gitee.com
 
+Git 全局设置:
 git config --global user.name "abbiezhu"
 git config --global user.email "abbiezhu@gmail.com"
 
 创建 git 仓库:
-
 mkdir abbiezhu
 cd abbiezhu
 git init
@@ -63,9 +63,24 @@ git remote add origin https://gitee.com/abbiezhu/abbiezhu.git
 git push -u origin master
 
 已有仓库?
-
 cd existing_git_repo
 git remote add origin https://gitee.com/abbiezhu/abbiezhu.git
+git push -u origin master
+
+…or create a new repository on the command line
+
+添加github.com
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M master
+git remote add origin git@github.com:abbiezhu/abbiezhu.git
+git push -u origin master
+
+…or push an existing repository from the command line
+
+git remote add origin git@github.com:abbiezhu/abbiezhu.git
+git branch -M master
 git push -u origin master
 -------------------------------------------
 
