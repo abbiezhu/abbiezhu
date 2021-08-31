@@ -44,10 +44,36 @@ git push -u origin master
 
 git push origin master 推送到 远程库上。
 
+
+-------------------------------------------
+Git 全局设置:
+
+git config --global user.name "abbiezhu"
+git config --global user.email "abbiezhu@gmail.com"
+
+创建 git 仓库:
+
+mkdir abbiezhu
+cd abbiezhu
+git init
+touch README.md
+git add README.md
+git commit -m "first commit"
+git remote add origin https://gitee.com/abbiezhu/abbiezhu.git
+git push -u origin master
+
+已有仓库?
+
+cd existing_git_repo
+git remote add origin https://gitee.com/abbiezhu/abbiezhu.git
+git push -u origin master
+-------------------------------------------
+
+
 克隆远程仓库
 git clone git@github.com:abbiezhu/wordpress_abbbt4.git
 
-
+-------------------------------------------
 分支：
 
 git checkout -b abb
