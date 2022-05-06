@@ -1,6 +1,11 @@
 完成配置：
+添加SSH KEY..
+创建SSH Key。在用户主目录下，看看有没有.ssh目录，如果有，再看看这个目录下有没有id_rsa和id_rsa.pub这两个文件，如果已经有了，可直接跳到下一步。如果没有，打开Shell（Windows下打开Git Bash），创建SSH Key：
+ssh-keygen -t rsa -C "abbiezhu@gmail.com"
+--------------------------
 git config --global user.name "abbiezhu"
 git config --global user.email "abbiezhu@gmail.com"
+----------------------------------------------------
 
 把文件加到git 库
 git add 文件名
@@ -26,12 +31,6 @@ git reset HEAD <file>可以把暂存区的修改撤销掉
 
 git rm --file  删除版本库的文件
 git checkout --file 其实是用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”。
-
-
-添加SSH KEY..
-创建SSH Key。在用户主目录下，看看有没有.ssh目录，如果有，再看看这个目录下有没有id_rsa和id_rsa.pub这两个文件，如果已经有了，可直接跳到下一步。如果没有，打开Shell（Windows下打开Git Bash），创建SSH Key：
-ssh-keygen -t rsa -C "abbiezhu@gmail.com"
-
 
 git remote add origin git@github.com:abbiezhu/wordpress_abbbt4.git
 链接到GITHUB 
@@ -126,4 +125,3 @@ git log --graph --pretty=oneline --abbrev-commit （git log --graph）
 git merge abb01 --no-ff 合并也可以加上 commit
 git merge abb01 --no-ff -m '来自abb01分支的修改'。
 -------------------
-safasfasf
