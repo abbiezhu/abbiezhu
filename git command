@@ -2,6 +2,7 @@
 添加SSH KEY..
 创建SSH Key。在用户主目录下，看看有没有.ssh目录，如果有，再看看这个目录下有没有id_rsa和id_rsa.pub这两个文件，如果已经有了，可直接跳到下一步。如果没有，打开Shell（Windows下打开Git Bash），创建SSH Key：
 ssh-keygen -t rsa -C "abbiezhu@gmail.com"
+加那个有邮箱的啊，哈哈。
 --------------------------
 git config --global user.name "abbiezhu"
 git config --global user.email "abbiezhu@gmail.com"
