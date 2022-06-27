@@ -5,7 +5,6 @@ ssh-keygen -t rsa -C "abbiezhu@gmail.com"
 git config --global user.name "abbiezhu"  
 git config --global user.email "abbiezhu@gmail.com"  
 ><img width='20px' src='https://www.lymiss.com/wp-content/themes/abbiezhu/favicon.png#pic_center' />[**我的GIT仓库**](https://github.com/abbiezhu/abbiezhu)
-
 ## **命令**
 ---
 把文件加到git 库
