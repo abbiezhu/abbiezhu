@@ -114,3 +114,9 @@ git log --graph --pretty=oneline --abbrev-commit （git log --graph）
 git merge abb01 --no-ff 合并也可以加上 commit
 git merge abb01 --no-ff -m '来自abb01分支的修改'。
 ---
+### Contact:
++ What? u dont know me?/
++ QQ: 2264253926
++ TEL：186-6217-3570
++ WEB：[www.lymiss.com](www.lymiss.com)
++ MAIL: abbiezhu@gmail.com
