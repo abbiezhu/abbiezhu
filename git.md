@@ -2,8 +2,10 @@
 ---
 ssh-keygen -t rsa -C "abbiezhu@gmail.com"  
 /用户主目录下/.ssh/id_rsa和id_rsa.pu两个文件  
+```git
 git config --global user.name "abbiezhu"  
 git config --global user.email "abbiezhu@gmail.com"  
+```
 ><img width='20px' src='https://www.lymiss.com/wp-content/themes/abbiezhu/favicon.png#pic_center' />[**我的GIT仓库**](https://github.com/abbiezhu/abbiezhu)
 ## **命令**
 ---
@@ -101,9 +103,9 @@ git swich abb = git checkout abb
 这一行是在  主分支添加了一行内容
 
 可以查看到 合并分支 的详情内容
-'''
+```git
 git log --graph --pretty=oneline --abbrev-commit （git log --graph）
-'''
+```
 > 以下来自 abb01 分支做的修改
 不在主分支 做事情，主分支只用来合屏  下面的分支内容。
 然后在marster分支中 用
