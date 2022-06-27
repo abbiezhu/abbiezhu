@@ -33,22 +33,27 @@ git rm --file  删除版本库的文件
 git checkout --file 其实是用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”。
 
 ## **github远程**
-git remote add origin git@github.com:abbiezhu/wordpress_abbbt4.git
+```git
+git remote add origin git@github.com:abbiezhu/abbiezhu.git
+```
 链接到GITHUB 
-
+```git
 git push -u origin master
+```
 第一次推送到 远程库上。
 
 把本地库的内容推送到远程，用git push命令，实际上是把当前分支master推送到远程。
 由于远程库是空的，我们第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。
-
-git push origin master 推送到 远程库上。
+git push origin master 推送到 远程库上。  
+---
 ## **添加gitee.com**
 Git 全局设置:
+```git
 git config --global user.name "abbiezhu"
 git config --global user.email "abbiezhu@gmail.com"
-
+```
 ### **创建 git 仓库:**
+```
 mkdir abbiezhu
 cd abbiezhu
 git init
@@ -57,15 +62,17 @@ git add README.md
 git commit -m "first commit"
 git remote add origin https://gitee.com/abbiezhu/abbiezhu.git
 git push -u origin master
-
+```
 ### **已有仓库?**
+```
 cd existing_git_repo
 git remote add origin https://gitee.com/abbiezhu/abbiezhu.git
 git push -u origin master
-
+```
 …or create a new repository on the command line
 
 ### **添加github.com**
+```
 git init
 git add README.md
 git commit -m "first commit"
@@ -78,7 +85,7 @@ git push -u origin master
 git remote add origin git@github.com:abbiezhu/abbiezhu.git
 git branch -M master
 git push -u origin master
-
+```
 ## **分支**
 git checkout -b abb
 创建一个分支 ABB  并切换
