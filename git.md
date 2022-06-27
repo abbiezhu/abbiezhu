@@ -1,5 +1,4 @@
 ## **完成配置**：
----
 ssh-keygen -t rsa -C "abbiezhu@gmail.com"  
 /用户主目录下/.ssh/id_rsa和id_rsa.pu两个文件  
 ```git
@@ -8,7 +7,6 @@ git config --global user.email "abbiezhu@gmail.com"
 ```
 ><img width='20px' src='https://www.lymiss.com/wp-content/themes/abbiezhu/favicon.png#pic_center' />[**我的GIT仓库**](https://github.com/abbiezhu/abbiezhu)
 ## **命令**
----
 把文件加到git 库
 git add 文件名
 git commit -m '写信息'  
@@ -35,7 +33,6 @@ git rm --file  删除版本库的文件
 git checkout --file 其实是用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”。
 
 ## **github远程**
----
 git remote add origin git@github.com:abbiezhu/wordpress_abbbt4.git
 链接到GITHUB 
 
@@ -47,7 +44,6 @@ git push -u origin master
 
 git push origin master 推送到 远程库上。
 ## **添加gitee.com**
----
 Git 全局设置:
 git config --global user.name "abbiezhu"
 git config --global user.email "abbiezhu@gmail.com"
@@ -84,7 +80,6 @@ git branch -M master
 git push -u origin master
 
 ## **分支**
----
 git checkout -b abb
 创建一个分支 ABB  并切换
 同下：
@@ -111,3 +106,4 @@ git log --graph --pretty=oneline --abbrev-commit （git log --graph）
 然后在marster分支中 用
 git merge abb01 --no-ff 合并也可以加上 commit
 git merge abb01 --no-ff -m '来自abb01分支的修改'。
+---
